@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="scrollspy-roteiro.css" />
   </head>
   <body>
     <!--sm- momento que vai colapsar-->
@@ -66,61 +67,200 @@
       </div>
     </nav>
     <!--aqui ele colocou um d-none d-md-block para o carossel sumir quando colapsar-->
-    <div class="container mt-1 d-none d-lg-block"> 
+    <div class="container mt-1 d-none d-lg-block">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img1.jpg" class="d-block w-100" alt="...">
+            <img src="img1.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h1>Destinos Únicos</h1>
-              <h5>Temos destinos exclusivos para lugares paradisiacos no mundo todo!</h5>
+              <h5>
+                Temos destinos exclusivos para lugares paradisiacos no mundo
+                todo!
+              </h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img2.jpg" class="d-block w-100" alt="...">
+            <img src="img2.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h1>Contato com a Natureza</h1>
               <h5>Desconecte do mundo e se conecte com a natureza</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img3.jpg" class="d-block w-100" alt="...">
+            <img src="img3.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h1>Que tal um mergulho com a natureza?</h1>
               <h5>Aproveite nossos pacotes ecológicos exclusivos</h5>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div> 
-
+      </div>
     </div>
     <!--classe para centralizar-->
-    <div class="container text-center mt-5">  
-      <div class="row"> 
-        <div class="col">  
-          <div class="display-5"> 
-            Aqui começa a sua aventura!
-          </div>
-          Reserve agora a sua experiência! 
-
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="display-5">Aqui começa a sua aventura!</div>
+          Reserve agora a sua experiência!
         </div>
       </div>
-
-       
-
+      <div class="row mt-5">
+        <div class="col-lg-3">
+          <div id="list-roteiro" class="list-group">
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-roteiro-1"
+              >Roteiro Aventura</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-roteiro-2"
+              >Roteiro Tranquilidade</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-roteiro-3"
+              >Roteiro Romântico</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-roteiro-4"
+              >Roteiro Família</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-roteiro-5"
+              >Roteiro Praia</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-roteiro"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-roteiro"
+            tabindex="0"
+          >
+            <h4 id="list-roteiro-1">Roteiro Aventura</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae iusto architecto eligendi, deserunt voluptatum quo
+              sequi officia natus iste, molestias fuga. Sed, maiores, iure,
+              harum totam quae eum assumenda unde repellat veniam cum
+              repellendus quibusdam necessitatibus neque explicabo nesciunt
+              dignissimos consectetur! Quo aut magni saepe asperiores
+              temporibus, consequatur perspiciatis dolores molestiae dolorem
+              quod? Asperiores perspiciatis nesciunt minus, iste non autem
+              doloremque voluptates ab tempora eum voluptate ratione aperiam
+              nostrum est provident quam earum, fugiat laboriosam consequuntur
+              omnis molestias sapiente itaque placeat eos. Sapiente facere
+              itaque eum quod atque dolorum animi officia hic debitis eos nulla
+              possimus blanditiis, sit voluptas eveniet iste! Nostrum explicabo
+              laboriosam modi nisi distinctio ipsa eum ex non similique ad!
+              Molestiae consequuntur sunt repellat perspiciatis provident cumque
+              at dicta quam, saepe nemo illo nesciunt est dolorem velit debitis
+              vitae soluta quos! Iste libero exercitationem deleniti ad iure
+              amet eos nesciunt autem eum itaque illum, optio quibusdam cum
+              porro quaerat dolorum inventore nulla tempore veniam neque dolore.
+              Debitis exercitationem nobis tenetur cupiditate minus aliquam
+              labore ipsam itaque iusto facere? Nisi ullam illo ipsam, vero
+              accusantium quibusdam assumenda natus dolorum ipsum est odit nam
+              corporis, officia soluta? Nemo placeat, ea quia perspiciatis
+              obcaecati exercitationem eos sit minima doloremque eum.
+            </p>
+            <h4 id="list-roteiro-2">Roteiro Tranquilidade</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              cum, ut accusamus odio laborum natus est officiis? Quod deserunt
+              laboriosam nesciunt sit alias quos, omnis animi ex non quia
+              beatae!
+            </p>
+            <h4 id="list-roteiro-3">Roteiro Romântico</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+              dignissimos deleniti ducimus. Dolorum id alias nemo quisquam,
+              aperiam, laborum beatae quaerat ex vero quis pariatur ipsam neque
+              aut porro ut eveniet, nesciunt similique voluptatibus non libero
+              accusantium maxime nihil expedita voluptate! Cum, dolore! Animi
+              consequatur error consectetur placeat vitae maxime autem, odio
+              minus sit dolor, quisquam, quae suscipit sint illum similique sunt
+              nemo debitis ipsum? Pariatur fugit voluptatibus odit, harum culpa
+              ipsa, numquam, atque veritatis facere omnis mollitia? Eius neque
+              ullam, harum modi, corrupti quam aperiam ipsam sint nam deserunt
+              illum quibusdam delectus, laboriosam autem. Accusantium dolorum
+              placeat perferendis voluptatibus hic modi quibusdam sunt, eius
+              enim quos velit eveniet perspiciatis nemo rem unde, itaque
+              similique voluptatem. Dolorem ad eveniet facilis modi nulla,
+              reiciendis vitae sapiente? Dignissimos fugit similique dolore
+              sint, quos, excepturi nisi natus illum explicabo reprehenderit
+              exercitationem soluta ut assumenda quidem eum aperiam eos placeat
+              amet. Rerum incidunt dolores autem commodi totam et ad ullam
+              eligendi, dignissimos, in beatae veniam placeat quod cupiditate
+              dolorum ducimus voluptatem perspiciatis, officiis eius iusto
+              praesentium maxime! Asperiores ut dolore praesentium quo soluta
+              sunt blanditiis dolor vitae id, illum officia minima maiores,
+              possimus quasi quos sit, iure mollitia delectus odio dolores at
+              laborum obcaecati.
+            </p>
+            <h4 id="list-roteiro-4">Roteiro Família</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              magni, commodi praesentium laudantium, quod aut aliquam hic,
+              quisquam pariatur tempora officia voluptate unde ut ducimus quo
+              expedita laboriosam molestiae odit.
+            </p>
+            <h4 id="list-roteiro-5">Roteiro Praia</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              delectus libero odio cupiditate deleniti, voluptate dolorem vitae
+              in eum veniam laboriosam soluta neque consequuntur excepturi
+              laborum? Vitae nulla ipsa culpa!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- O bootstrap tem uma classe de display e outras de grid. A de grid tem 12 colunas-->
